@@ -1,0 +1,97 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .studForm{
+        margin-top: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        align-items: start;
+
+        .text{
+            width: 100%;
+            height: fit-content;
+            text-align: center;
+        }
+
+        .checkbox{
+            display: flex;
+            align-items: center;
+            input{
+                width: 20px;
+                height: 20px; 
+            }
+            span{
+                padding-left: 10px;
+                font-weight: lighter;
+            }
+        }
+
+
+        input{
+            border-radius: 5px;
+            height: 25px;
+            border: 1px solid gray;
+            padding-left: 5px;
+            width: 100%;
+
+
+        }
+
+        button{
+            width: 100%;
+            height: 30px;
+            border-radius: 7px;
+            border: 1px solid gray;
+            background-color: #0077FF;
+            color: white;
+            font-size: 16px;
+        }
+
+        .card{
+            background-color: rgb(214, 210, 210);
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            div{
+                border-bottom: 1px solid gray;
+                width: 90%;
+                text-align: center;
+                color: rgb(58, 58, 58);
+                padding-bottom: 5px;
+            }
+
+            .topT{
+                color: #0077FF;
+                font-weight: bold;
+                font-size: 18px;
+                border: none;
+                padding-top: 5px;
+                padding-bottom: 10px;
+            }
+
+            .botT{
+                font-size: 18px;
+                color: black;
+                border: none;
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+
+            button{
+                margin-top: 10px;
+                margin-bottom: 5px;
+                width: 90%;
+            }
+
+        }
+    }
+}
