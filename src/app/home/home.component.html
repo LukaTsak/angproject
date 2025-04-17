@@ -1,3 +1,9 @@
 <p>home works!</p>
 
 <app-card [INFO] = 'name' [INFO2]="surname" [INFO3] = 'link'></app-card>
+
+<button (click)="hide()">hide</button>
+
+<ul *ngIf="showLists">
+    <li *ngFor="let el of array" >{{el}}</li>
+</ul>
