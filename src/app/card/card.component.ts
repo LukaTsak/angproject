@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -7,7 +7,17 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() INFO? : string
-  @Input() INFO2? : string
-  @Input() INFO3? : string
+  @Input() el: any;
+  @Input() index?: number;
+
+  @Output() delete = new EventEmitter<number>();
+  @Output() editt = new EventEmitter<number>();
+
+  onDelete() {
+    this.delete.emit(this.index);
+  }
+
+  onEdit() {
+    this.editt.emit(this.index);
+  }
 }

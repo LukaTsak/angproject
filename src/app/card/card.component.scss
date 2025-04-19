@@ -1,9 +1,50 @@
-.carddiv{
-    border: 1px solid black;
-    width: 200px;
-    height: 400px;
+.card{
+    background-color: rgb(214, 210, 210);
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    img{
-        width: 100%;
+    div{
+        border-bottom: 1px solid gray;
+        width: 90%;
+        text-align: center;
+        color: rgb(58, 58, 58);
+        padding-bottom: 5px;
     }
+
+    .topT{
+        color: #0077FF;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .botT{
+        font-size: 18px;
+        color: black;
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    button{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        width: 90%;
+    }
+
+    button{
+        width: 95%;
+        height: 30px;
+        border-radius: 7px;
+        border: 1px solid gray;
+        background-color: #0077FF;
+        color: white;
+        font-size: 16px;
+    }
+
 }

@@ -3,11 +3,10 @@ import { HeaderComponent } from "../header/header.component";
 import { CardComponent } from "../card/card.component";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { findIndex } from 'rxjs';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, CardComponent, CommonModule, FormsModule],
+  imports: [CardComponent, CommonModule, FormsModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -20,7 +19,7 @@ export class HomeComponent {
  city = ''
  zip = ''
  check : boolean = false
- index = 0
+index? : number
 
  studentsArray : any = []
 
@@ -28,6 +27,7 @@ export class HomeComponent {
 
  create(){
   const studObj = {
+    index: this.index,
     firstname : this.firstName,
     Agee : this.age,
     gradee : this.grade,
@@ -36,11 +36,11 @@ export class HomeComponent {
     cityy : this.city,
     zipp : this.zip,
     checkk : this.check,
-    indexx : this.index++
    }
 
   this.studentsArray.push (studObj)
   console.log(this.studentsArray)
+  
 
   this.firstName = ''
   this.age = ''

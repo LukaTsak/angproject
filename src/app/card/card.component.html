@@ -1,5 +1,16 @@
-<div class="carddiv">
-    <img [src]="INFO3" alt="">
-    <p>{{INFO}}</p>
-    <p>{{INFO2}}</p>
-</div>
+        <div class="card">
+            <div class="topT">index: {{index}}</div>
+            <div class="topT">Students Info</div>
+            <div class="name">name: {{el.firstname}}</div>
+            <div class="age">age: {{el.agee}}</div>
+            <div class="grade">grade: {{el.gradee}}</div>
+            <div class="subject">subject: {{el.subj}}</div>
+            <div class="botT">Address </div>
+            <div class="street">street: {{el.streett}}</div>
+            <div class="city">city: {{el.cityy}}</div>
+            <div class="zip">zip: {{el.zipp}}</div>
+            <div class="check">Enrolled: {{el.checkk}}</div>
+
+            <button (click)="onDelete()">Delete</button>
+            <button (click)="onEdit()">Edit</button>
+        </div>
