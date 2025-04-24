@@ -1,21 +1,6 @@
 <main>
     <div class="studForm">
-        <div class="text">Student Form</div>
-        <input type="text" placeholder="firstName" [(ngModel)]="firstName">
-        <input type="text" placeholder="age" [(ngModel)]="age">
-        <input type="text" placeholder="grade" [(ngModel)]="grade">
-        <input type="text" placeholder="subjects" [(ngModel)]="subjects">
-        <div class="checkbox">
-            <input type="checkbox" name="isEnrolled" id="" [(ngModel)]="check">
-            <span>Enrolled?</span>
-        </div>
-        <div class="text">Address</div>
-        <input type="text" placeholder="street" [(ngModel)]="street">
-        <input type="text" placeholder="city" [(ngModel)]="city">
-        <input type="text" placeholder="zip" [(ngModel)]="zip">
 
-        <button (click)="create()">Create Student</button>
-        <button (click)="checkDel()">Delete Checked Students</button>
 
         <app-card *ngFor="let el of studentsArray let indexx = index" [el]="el" [index]="index" (delete)="delete(indexx)" (editt)="editt(indexx)"></app-card>
 

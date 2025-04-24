@@ -1,16 +1,11 @@
         <div class="card">
-            <div class="topT">index: {{index}}</div>
-            <div class="topT">Students Info</div>
-            <div class="name">name: {{el.firstname}}</div>
-            <div class="age">age: {{el.agee}}</div>
-            <div class="grade">grade: {{el.gradee}}</div>
-            <div class="subject">subject: {{el.subj}}</div>
-            <div class="botT">Address </div>
-            <div class="street">street: {{el.streett}}</div>
-            <div class="city">city: {{el.cityy}}</div>
-            <div class="zip">zip: {{el.zipp}}</div>
-            <div class="check">Enrolled: {{el.checkk}}</div>
+            <img class="image" src="{{el.avatar}}" alt="">
+            <div class="name">name: {{el.first_name}}</div>
+            <div class="age">lastname: {{el.last_name}}</div>
+            <div class="grade">email: {{el.email}}</div>
 
-            <button (click)="onDelete()">Delete</button>
-            <button (click)="onEdit()">Edit</button>
+            <button routerLink="/details/{{el.id}}" (click)="onDelete()">See Details</button>
+            <button *ngIf="cardId !== undefined" routerLink="/home">go home</button>
+
+
         </div>
