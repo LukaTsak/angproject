@@ -15,7 +15,6 @@ export class CardComponent {
   constructor(private routee: ActivatedRoute) { 
     this.routee.params.subscribe(paramss => {
       this.cardId = paramss['id'];
-      console.log(this.cardId);
       // this.firstName = this.studentsArray[this.index].first_name;
       // this.age = this.studentsArray[this.index].last_name;
       // this.grade = this.studentsArray[this.index].email;
